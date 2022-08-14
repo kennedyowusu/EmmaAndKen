@@ -9,6 +9,8 @@ body {
     margin-bottom: 25px;
 }
 
+
+
 form {
     background-color: #fff;
     max-width: 500px;
@@ -17,10 +19,14 @@ form {
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+
 .form-main label {
-    display: block;
-    margin-bottom: 10px
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 48%;
 }
+
 
 .form-main input,
 .form-main select,
