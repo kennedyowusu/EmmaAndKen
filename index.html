@@ -18,65 +18,76 @@
     - The freeCodeCamp Team
     -->
 
-    <div><h1 id="title">Emmanuel And Kennedy Survey Form</h1>
-    <p id="description">
-      Thank you for taking the time to help us improve the platform
-    </p>
+    <div class="heading">
+      <h1 id="title">Emmanuel And Kennedy Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <div class="form-main">
+        <form id="survey-form">
+          <label id="name-label">
+            Enter Name:
+            <input type="text" id="name" required placeholder="Enter Name..." />
+          </label>
 
-    <form id="survey-form">
+          <label id="email-label">
+            Enter Email:
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="Enter Email Address..."
+            />
+          </label>
 
-      <label id="name-label"> Enter Name:
-        <input type="text"  id="name" required placeholder="Enter Name..." />
+          <label id="number-label">
+            Enter Number:
+            <input
+              type="number"
+              min="0"
+              max="9"
+              id="number"
+              required
+              placeholder="Enter Your Age..."
+            />
+          </label>
 
-      </label>
+          <select id="dropdown" class="selected">
+            <option>One</option>
+            <option>Two</option>
+          </select>
 
-      <label id="email-label"> Enter Email:
-        <input type="email" id="email" required placeholder="Enter Email Address..." />
+          <div>
+            <input type="radio" name="radio" value="1" id="radio1" />
+            <label for="radio1">One</label>
 
-      </label>
+            <input type="radio" name="radio" value="2" id="radio2" />
+            <label for="radio2">Two</label>
+          </div>
 
-      <label id="number-label"> Enter Number:
-        <input type="number" min="0" max="9" id="number" required  placeholder="Enter Your Age..."/>
+          <div>
+            One:
+            <input
+              type="checkbox"
+              id="checkbox"
+              name="checkbox"
+              value="checked"
+            />
+            Two:
+            <input
+              type="checkbox"
+              id="checkbox"
+              name="checkbox"
+              value="checked"
+            />
+          </div>
 
-      </label>
+          <textarea> </textarea>
 
-      <select id="dropdown">
-
-        <option>One</option>
-        <option>Two</option>
-
-      </select>
-
-       <div>
-         
-          <input type="radio" name="radio" value="1" id="radio1" />
-          <label for="radio1">One</label>
-
-          <input type="radio" name="radio" value="2" id="radio2" />
-          <label for="radio2">Two</label>
-
-       </div>
-
-
-        <div>
-          One: <input type="checkbox" id="checkbox" name="checkbox" value="checked">
-          Two: <input type="checkbox" id="checkbox" name="checkbox" value="checked">
-        </div>
-
-        <textarea>
-
-        </textarea>
-
-        <button id="submit" type="submit">Submit</button>
-
-
-    </form>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
-
-
-
-    
-
 
     <script src="js/index.js"></script>
   </body>
